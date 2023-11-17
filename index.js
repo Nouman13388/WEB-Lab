@@ -156,3 +156,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
   });
+
+
+  function add(num1, num2) {
+    return num1 + num2;
+  }
+
+  function callBack(num1, num2, callback) {
+    return callback(num1, num2);
+  }
+
+  console.log(callBack(10, 3, add));
