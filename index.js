@@ -184,8 +184,7 @@
 // console.log(data());
 
 const postData = (user, score) => {
-  return fetch(
-    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/",
+  return fetch("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/",
     {
       method: "POST",
       body: JSON.stringify({
@@ -213,3 +212,5 @@ const postData = (user, score) => {
 };
 
 postData("Sinclare", 100);
+
+
